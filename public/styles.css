@@ -1,0 +1,222 @@
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.navbar-dark-mode {
+    background-color: #343a40 !important;
+}
+
+.navbar-light-mode {
+    background-color: transparent !important;
+    position: fixed;
+}
+
+.logo {
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 10px #121212;
+    height: 45px;
+}
+
+.fixed-bg {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    position: relative;
+}
+
+.photo-1 { 
+    background-image: url('../resources/photo_1.jpg'); 
+    transition: opacity 1.5s; /* Realentizar el efecto de opacidad */
+}
+
+.photo-2 { background-image: url('../resources/photo_2.jpg'); }
+.photo-3 { background-image: url('../resources/photo_3.jpg'); }
+.photo-4 { background-image: url('../resources/photo_8.jpg'); }
+.photo-5 { background-image: url('../resources/photo_8.jpg'); }
+
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: #5a6268; /* Mejorar la tonalidad del botón */
+    border-color: #5a6268; /* Mejorar la tonalidad del botón */
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 15px 30px; /* Aumentar el tamaño del botón */
+    font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.btn-custom:hover {
+    background-color: #6f42c1; /* Efecto hover de color morado */
+    color: white;
+    transform: scale(1.1); /* Efecto de agrandar el botón */
+}
+
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Sección con imagen de fondo y cajas transparentes */
+.background-section {
+    filter: brightness(0.5);
+    transition: all 0.8s;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./resources/photo_0.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.background-section:hover{
+    filter: brightness(1.5);
+    transition: all 0.8s;
+}
+
+/* Responsivo para pantallas grandes */
+@media (min-width: 1200px) {
+    .background-section {
+        flex-direction: row;
+    }
+
+    .fun-section-content {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    .background-section {
+        flex-direction: column;
+    }
+
+    .fun-section-content {
+        flex-direction: column;
+    }
+}
+
+/* Responsivo para pantallas medianas y pequeñas */
+@media (max-width: 767px) {
+    .background-section, .fun-section-content {
+        flex-direction: column;
+    }
+    .blur {
+        display: none;
+    }
+    .centered-content {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
+}
+
+.box {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.box.left-box p {
+    width: 80%;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.box.left-box h2 {
+    width: 80%;
+    margin: 10px;
+    color: aliceblue;
+}
+
+.left-box .hover-button {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid rgba(251, 119, 60, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.left-box .hover-button:hover {
+    transition: transform 0.3s ease;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 15px rgba(251, 119, 60, 0.5);
+    text-shadow: 0 0 10px rgba(251, 119, 60, 0.7);
+}
+
+.blur {
+    width: 400px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    padding: 20px;
+}
+
+.blur:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.blur h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+}
+
+.blur p {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/*Efectos de slide caja derecha*/
+.text-slider {
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+    height: 45%;
+    padding: 20px; /* Añade espacio interior para evitar que el contenido toque los bordes */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total del elemento */
+}
+
+.body.dark-mode .slide-text {
+    color: rgba(251, 119, 60, 0.7) !important;
+}
+
+.slide-text {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slide-text.active {
+    opacity: 1;
+}

@@ -1,0 +1,74 @@
+
+body.dark-mode {
+    background-color: #121212;
+}
+.navbar-dark-mode {
+    background-color: #343a40 !important;
+    color: #ffff !important;
+}
+.navbar-light-mode {
+    background-color: #f8f9fa !important;
+    color: #000 !important;
+}
+
+.logo{
+    width: 55px;
+    height: 45px;
+}
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.form-container {
+    flex: 1;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    margin-right: 20px;
+}
+.image-container {
+    flex: 1;
+    text-align: center;
+}
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.btn{
+    border: 1px solid rgba(0, 89, 255, 0.75);
+}
+.btn-custom {
+    background-color: #5a6268; /* Tonalidad del botón */
+    border-color: #5a6268;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+.btn-custom:hover {
+    /*background-color: #6f42c1; /* Efecto hover de color morado */
+    border: 2px solid rgba(0, 255, 106, 0.945);
+    color: white;
+    transform: scale(1.05); /* Efecto de agrandar el botón */
+}
+
+
+
+/*Modificacion especial del cubo para este componente*/
+aside.cara {
+    position: absolute;
+    width: 298px;
+    height: 298px;
+    background-color: rgba(244, 246, 255, 0.25);
+    border: 1px solid rgba(0, 255, 106, 0.945);
+    color: #00FF6AF2;
+    font-size: 3em;
+    text-align: center;
+    line-height: 298px;
+    box-shadow: 0px 0px 5px rgba(0, 255, 106, 0.945);
+  }

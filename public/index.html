@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="icon" type="icon/png" href="./resources/icon.png">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-light-mode">
+        <a class="navbar-brand" href="/"><img src="./resources/icon.png" alt="Logo" class="logo"></a></li></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/ingreso">Ingreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/test">Prueba</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/singup">Registro</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary toggleDarkMode" id="toggleMode">Modo Noche</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="background-section responsive-section">
+        <div class="box left-box ">
+            <h2>Bienvenido</h2>
+            <p>¿Quieres saber sobre el mundo de la programacion y el desarrollo de software?</p>
+            <button id="scroll-button" class="hover-button">Saber Mas</button>
+        </div>
+        <div class="box blur right-box text-slider">
+            <div class="slide-text">
+                <h3>Ventajas de Aprender a Programar</h3>
+                <p class="">
+                    Aprender a programar abre un mundo de oportunidades laborales, 
+                    ya que las habilidades de programación son altamente demandadas.</p>
+            </div>
+            <div class="slide-text">
+                <h3>Desventajas de Aprender a Programar</h3>
+                <p class="">
+                    La programación puede tener una curva de aprendizaje pronunciada, requiriendo tiempo y 
+                    esfuerzo para dominarla.</p>
+            </div><div class="slide-text">
+                <h3>Importancia de Aprender a Programar</h3>
+                <p class="">
+                    En la era digital actual, saber programar es fundamental. Esta habilidad no solo te prepara para el futuro laboral, 
+                    sino que también te empodera para crear soluciones tecnológicas y contribuir a la innovación. </p>
+            </div>
+        </div>
+    </section>
+    <div id="destino" class="info-section text-center">
+        <div class="container first">
+            <div id="targetElement" class="fade-container">
+                <h2 class="fade-title">Hay ciertas tecnologias Generalmente usadas en Informatica</h2>
+                <p><span>Inteligencia Artificial (IA):</span> Tecnologías que permiten a las máquinas imitar funciones cognitivas humanas como aprender y resolver problemas.</p>
+                <p><span>Aprendizaje Automático (Machine Learning):</span> Subcampo de la IA que permite a los sistemas aprender y mejorar automáticamente a partir de la experiencia sin ser programados explícitamente.</p>
+                <p><span>Redes Neuronales:</span> Modelos computacionales inspirados en el cerebro humano, utilizados en aprendizaje profundo para tareas como reconocimiento de voz e imágenes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-bg photo-5"></div>
+    <div class="info-section text-center">
+        <div id="targetElement" class="unique-section">
+            <section class="interactive-section">
+                <div class="molde_1 text-container">
+                    <h1 class="glowing-text"> Los lenguajes de programación son esenciales en tecnología </h1>
+                    <p>Estos permiten crear software, aplicaciones y sistemas. Hay diferentes tipos debido a sus usos específicos:
+                        Lenguajes de Bajo Nivel: Como ensamblador, controlan directamente el hardware.
+                        Lenguajes de Alto Nivel: Como Python y Java, son más intuitivos y fáciles de aprender.
+                        Lenguajes de Script: Como JavaScript y PHP, se usan para desarrollo web y automatización.
+                        Lenguajes Orientados a Objetos: Como C++ y Java, organizan el código en objetos.
+                        Lenguajes Funcionales: Como Haskell, se enfocan en funciones matemáticas.</p>
+                </div>
+                <div class="molde_2 text-container">
+                    <div class="slider">
+                        <img src="./resources/photo_7.png" alt="Imagen 1" class="slide active">
+                        <img src="./resources/photo_9.jpg" alt="Imagen 2" class="slide">
+                        <img src="./resources/vid.gif" alt="Imagen 3" class="slide">
+                    </div>
+                </div>
+            </section>
+            <script src="script.js"></script>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Storm Tech. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="swiper.js"></script>
+    <script src="script.js"></script>
+    <script src="dark.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

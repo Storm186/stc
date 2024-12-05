@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+    <link rel="icon" type="icon/png" href="../resources/icon.png">
+    <link rel="stylesheet" href="cubo.css">
+    <link rel="stylesheet" href="singUp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-light-mode">
+        <a class="navbar-brand" href="/"><img src="./resources/icon.png" alt="Logo" class="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ingreso">Ingreso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="active nav-link" href="/singup">Registro</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-secondary" id="toggleMode">Modo Noche</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        <main class="container my-5" style="margin-top: 75px;">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="form-container">
+                        <h2 class="text-center">Registro</h2>
+                        <form action="/registrar" method="POST">
+                            <div class="form-group">
+                                <label for="usuario">Nombre Completo</label>
+                                <input type="text" required class="form-control" id="usuario" name="usuario" placeholder="Ingrese su Nombre Completo">
+                            </div>
+                            <div class="form-group">
+                                <label for="correo">Correo</label>
+                                <input type="email" class="form-control" required id="correo" name="correo" aria-describedby="emailHelp" placeholder="Ingrese su Correo">
+                            </div>
+                            <div class="form-group">
+                                <label for="contrasena">Password</label>
+                                <input type="password" class="form-control" id="contrasena" name="contrasena" required placeholder="Ingrese una contraseña de más de 8 caracteres">
+                            </div>
+                            <button type="submit" class="btn btn-custom btn-block">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 d-flex align-items-center justify-content-center" id="objeto-3d">
+                    <div class="image-container">
+                        <div class="espacio3D">
+                            <div class="cubo3D">
+                              <div class="base"></div>
+                              <aside class="cara cara1"></aside>
+                              <aside class="cara cara2"></aside>
+                              <aside class="cara cara3"></aside>
+                              <aside class="cara cara4"></aside>
+                              <aside class="cara cara5"></aside>
+                              <aside class="cara cara6"></aside>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    <script>
+        document.getElementById('toggleMode').addEventListener('click', function () {
+            document.body.classList.toggle('dark-mode');
+            document.querySelector('.navbar').classList.toggle('navbar-dark-mode');
+            document.querySelector('.navbar').classList.toggle('navbar-light-mode');
+            this.textContent = document.body.classList.contains('dark-mode') ? 'Modo Dia' : 'Modo Noche';
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

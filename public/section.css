@@ -1,0 +1,149 @@
+.info-section {
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+    height: auto; /* Cambiar la altura a auto para que se ajuste al contenido */
+    min-height: 70vh; /* Mantener una altura mínima para pantallas grandes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .info-section {
+        padding: 50px 15px;
+    }
+
+    .info-section .content {
+        width: 80%;
+    }
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 767px) {
+    .info-section {
+        padding: 40px 10px;
+        height: auto; /* Asegurarse de que la altura se ajuste al contenido */
+    }
+
+    .info-section .content {
+        width: 90%;
+    }
+}
+
+/* Estilos específicos para la clase .unique-section */
+.unique-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: white; /* Fondo blanco */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsivo para .interactive-section */
+.unique-section .interactive-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap; /* Para hacer que sea responsivo */
+}
+
+/* Responsivo para .text-container */
+.unique-section .text-container {
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 1 1 300px; /* Hacer que las cajas sean responsivas */
+    margin: 10px; /* Espacio entre las cajas */
+}
+
+/* Animación para .molde_1 */
+.unique-section .molde_1 {
+    border-bottom: 5px solid transparent; /* Borde inferior inicial */
+    animation: glowingBorder 10s linear infinite; /* Animación más lenta y suave */
+    text-align: left; /* Alinear contenido a la izquierda */
+    cursor: pointer;
+}
+
+@keyframes glowingBorder {
+    0% { border-bottom-color: #ff4b1f; box-shadow: 0 10px 15px rgba(255, 75, 31, 0.7); }
+    25% { border-bottom-color: #ff9068; box-shadow: 0 10px 15px rgba(255, 144, 104, 0.7); }
+    50% { border-bottom-color: #42e695; box-shadow: 0 10px 15px rgba(66, 230, 149, 0.7); }
+    75% { border-bottom-color: #3bb2b8; box-shadow: 0 10px 15px rgba(59, 178, 184, 0.7); }
+    100% { border-bottom-color: #ff4b1f; box-shadow: 0 10px 15px rgba(255, 75, 31, 0.7); }
+}
+
+/* Responsivo para textos con animación */
+.unique-section .glowing-text {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.unique-section .molde_1 p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.unique-section .glowing-text:hover {
+    border-bottom: 2px solid #ff4b1f; /* Cambia a rojo neón y crece */
+    transition: border-bottom 0.5s ease-in-out; /* Transición suave */
+    animation: none; /* Detener la animación */
+}
+
+/* Responsivo para slider de imágenes */
+.unique-section .slider {
+    width: 90%;
+    height: 300px; /* Altura fija para todas las imágenes */
+    position: relative;
+    overflow: hidden;
+}
+
+.unique-section .slider img {
+    width: 90%;
+    height: 90%;
+}
+
+.unique-section .slide {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 5px;
+}
+
+.unique-section .slide.active {
+    display: block;
+}
+
+/*Sections con informacion*/
+.fade-container {
+    justify-content: left;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    float:left;
+    color: #333;
+    opacity: 0; /* Inicialmente invisible */
+}
+
+.fade-title {
+    color: #121212;
+    margin-bottom: 15px;
+}
+.fade-container span{
+    color: #121212;
+    font-weight: bold;
+}
+#fark{
+    background-color: #121212;
+    color: #fff;
+}
+#fark span{
+    color: #f0f0f0;
+}

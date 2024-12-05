@@ -1,0 +1,146 @@
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/* Barra de navegación */
+.navbar-dark-mode {
+    background-color: #343a40 !important;
+}
+
+.navbar-light-mode {
+    background-color: transparent !important;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    width: 55px;
+    height: 45px;
+}
+
+/* Nueva entrada */
+#nuevo-post {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+body.dark-mode #nuevo-post {
+    background-color: #242424;
+}
+
+/* Contenedor del objeto 3D */
+#objeto-3d {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Textarea */
+textarea.form-control {
+    width: 100%;
+    height: 100px;
+}
+
+body.dark-mode textarea.form-control {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+/* Comentarios */
+#comentarios {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+body.dark-mode #comentarios {
+    background-color: #242424;
+    color: white;
+}
+
+/* Cartas de comentarios */
+.comentario {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .comentario {
+    background-color: #333;
+    border-color: #555;
+    color: white;
+}
+
+.comentario:hover {
+    transform: scale(1.02);
+}
+
+/* Botones */
+.btn {
+    border: 1px solid rgba(217, 22, 86, 0.75);
+}
+
+.btn-custom {
+    background-color: #5a6268; /* Tonalidad del botón */
+    border-color: #5a6268;
+    color: white;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.btn-custom:hover {
+    border: 2px solid rgba(217, 22, 86, 0.75);
+    color: white;
+    transform: scale(1.05); /* Efecto de agrandar el botón */
+}
+
+body.dark-mode .btn-custom {
+    background-color: transparent;
+    color:#121212;
+}
+
+body.dark-mode .btn-custom:hover {
+    border: 2px solid rgba(217, 22, 86, 0.75);
+    background-color: transparent;
+    transform: scale(1.05); /* Efecto de agrandar el botón */
+}
+
+/* Títulos y párrafos */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode p,
+body.dark-mode .card-body {
+    color: white;
+}
+
+/*Modificación especial del cubo para este componente*/
+aside.cara {
+    position: absolute;
+    width: 298px;
+    height: 298px;
+    background-color: rgba(244, 246, 255, 0.25);
+    border: 1px solid rgba(217, 22, 86, 0.75);
+    color: #D91656;
+    font-size: 3em;
+    text-align: center;
+    line-height: 298px;
+    box-shadow: 0px 0px 5px rgba(217, 22, 86, 0.75);
+}

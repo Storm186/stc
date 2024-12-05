@@ -1,0 +1,33 @@
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+}
+
+.centered h1 {
+    font-size: 5em;
+}
+
+.centered {
+    text-align: center;
+    color: blue;
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #0D92F4;
+    }
+    20% {
+        color: #C62E2E;
+    }
+    60%{
+        color: #433878;
+    }
+    100% {
+        color: #00FF9C;
+    }
+}

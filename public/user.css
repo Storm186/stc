@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.navbar-dark-mode {
+    background-color: #343a40 !important;
+}
+
+.navbar-light-mode {
+    background-color: transparent !important;
+    position: fixed;
+}
+
+.logo {
+    width: 55px;
+    border-radius: 50%;
+    box-shadow: 10px #121212;
+    height: 45px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.message h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.message p {
+    color: #333;
+}
+
+.object-3d {
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Añadir margen inferior para espacio */
+    background-color: transparent;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(30deg) rotateY(-45deg);
+    animation: rotate 10s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(244, 246, 255, 0.25);
+    border: 1px solid #FF004D;
+}
+
+.front  { transform: translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from { transform: rotateX(30deg) rotateY(-45deg); }
+    to   { transform: rotateX(30deg) rotateY(315deg); }
+}
+
+@media (min-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .message {
+        text-align: center;
+    }
+}
