@@ -2,8 +2,6 @@ const express = require('express');
 const path = require('path');
 const rutas = require('./rutas/rutas.js');
 const session = require('express-session');
-const passport = require('passport');
-const initializePassport = require('./passport-config');
 const bodyParser = require('body-parser');
 
 
